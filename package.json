@@ -1,0 +1,22 @@
+{
+  "name": "tailwindnode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build-css": "tailwindcss -i public/styles.css -o public/build/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.6"
+  },
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "gulp": "^4.0.2"
+  }
+}

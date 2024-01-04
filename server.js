@@ -13,6 +13,9 @@ app.get('/', (req, res) => {
     // Serve .html
     // res.sendFile(path.join(__dirname, '/views/index.html'))
 })
+app.get('/landing', (req, res) => {
+    res.render('landing')
+})
 // Start the server
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)

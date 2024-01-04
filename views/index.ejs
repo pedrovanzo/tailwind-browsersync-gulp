@@ -1,15 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwindcss</title>
-    <link rel="stylesheet" href="/build/styles.css">
-</head>
-<body>
-    <div class="container mx-2 my-2 shadow-md p-4 bg-rose-500 rounded-md bg-slate-50 text-center">
-        <h1 class="text-white text-2xl font-medium m-0">Hello Tailwindcss</h1>
-        <p class="text-white italic text-xs">with node</p>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tailwindcss</title>
+        <link rel="stylesheet" href="/build/styles.css" />
+    </head>
+    <body>
+        <main class="container">
+            <div class="sticky top-2 mx-2 my-2 rounded-md bg-gradient-to-r from-cyan-600 to-blue-600 p-4 text-center text-red-900 shadow-md hover:cursor-pointer">
+                <h1 class="m-0 text-2xl font-medium text-white">Hello Tailwindcss</h1>
+                <p class="text-xs italic text-white">with node</p>
+            </div>
+            <% for( let index = 0; index < 3; index++ ) { %>
+            <span class="flex px-2 text-zinc-700">Generated Paragraph</span>
+            <% } %>
+        </main>
+    </body>
 </html>

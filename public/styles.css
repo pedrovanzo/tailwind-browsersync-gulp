@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.theme-light {
+    --background: 214.29, 31.82%, 91.37%;
+    --hero-text: 0, 0%, 26.27%;
+    --text: 0, 0%, 43.53%;
+    --cta: 0, 0%, 0%;
+    --cta-text: 0, 0%, 91.37%;
+}
+.theme-dark {
+    --background: 180, 0.87%, 10.55%;
+    --hero-text: 0, 0%, 86.27%;
+    --text: 0, 0%, 43.53%;
+    --cta: 0, 0%, 0%;
+    --cta-text: 0, 0%, 91.37%;
+}
+.theme-green {
+    --background: 108.95, 39.18%, 61.96%;
+    --hero-text: 125.85, 29.5%, 27.25%;
+    --text: 0, 0%, 90%;
+    --cta: 108.96, 69.83%, 35.1%;
+    --cta-text: 0, 0%, 90%;
+}

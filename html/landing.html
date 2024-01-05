@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing</title>
+        <link rel="stylesheet" href="./../public/build/styles.css" />
+    </head>
+    <body class="theme-light">
+        <main class="relative flex min-h-screen flex-col items-center justify-center bg-lbackground text-center">
+            <div class="absolute left-4 top-4 flex flex-row gap-2">
+                <button data-light class="theme-light min-w-[50px] rounded-md border border-lherotext bg-lbackground px-2 py-1 text-sm text-ltext">Light</button>
+                <button data-dark class="theme-dark min-w-[50px] rounded-md bg-lcta px-2 py-1 text-sm text-lctatext">Dark</button>
+                <button data-green class="theme-green min-w-[50px] rounded-md bg-lcta px-2 py-1 text-sm text-lctatext">Green</button>
+            </div>
+            <div class="flex max-w-[350px] flex-col items-center justify-center gap-8 text-center lg:max-w-full">
+                <h1 class="text-4xl font-semibold text-lherotext lg:text-6xl">Walk through the world with us</h1>
+                <p class="text-ltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus imperdiet sed id elementum. Quam vel aliquam sit vulputate. Faucibus nec gravida ipsum pulvinar vel.</p>
+                <button class="rounded-full bg-lcta/70 px-8 py-3 text-lctatext active:bg-lcta/100">Get started</button>
+            </div>
+        </main>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                console.log('DOM Loaded successfully')
+                let lightButton = document.querySelector('[data-light]')
+                let darkButton = document.querySelector('[data-dark]')
+                let greenButton = document.querySelector('[data-green]')
+                const bodyElement = document.querySelector('body')
+                lightButton.addEventListener('click', () => {
+                    bodyElement.className = 'theme-light'
+                })
+                darkButton.addEventListener('click', () => {
+                    bodyElement.className = 'theme-dark'
+                })
+                greenButton.addEventListener('click', () => {
+                    bodyElement.className = 'theme-green'
+                })
+            })
+        </script>
+    </body>
+</html>
